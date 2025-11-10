@@ -1,0 +1,115 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.8s ease;
+}
+
+/* 🌈 Full background with gradient + blur effect */
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    font-family: "Poppins", sans-serif;
+}
+
+/* 🧭 Elegant glass container */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 50px 70px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* 🧮 Counter Number */
+#count {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    margin: 20px 0 40px;
+    transition: color 0.4s ease, transform 0.3s ease;
+}
+
+/* 🔘 Button layout */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+/* ⚪ Circle buttons */
+.circle-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.circle-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
+}
+
+/* 🌀 Reset button */
+.reset-btn {
+    background: linear-gradient(135deg, #007bff, #00a2ff);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 123, 255, 0.6);
+}
+
+#status-text {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
